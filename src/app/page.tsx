@@ -1,7 +1,6 @@
-// app/page.tsx
-
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -17,11 +16,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <main>
         <section className="hero">
-          <img
-            src="https://emada.in-novation.tech/wp-content/uploads/2022/04/product-img-14-300x300.jpg"
-            alt="Hero Image"
-            className="hero-image"
-          />
+          <div className="hero-image-container">
+            <Image
+              src="https://emada.in-novation.tech/wp-content/uploads/2022/04/product-img-14-300x300.jpg"
+              alt="Hero Image"
+              layout="fill"
+              objectFit="cover"
+              className="hero-image"
+            />
+          </div>
           <div className="hero-text-box">
             <h1 className="hero-title">Luxury homeware for people who love timeless design quality</h1>
             <p className="hero-description">Shop the new Spring 2022 collection today</p>
@@ -34,18 +37,22 @@ export default function HomePage() {
         {/* Products Section */}
         <section className="products">
           <div className="product">
-            <img
+            <Image
               src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlAZfIzBx81U-SLYY5is6OggsxS042f0VNlRrpUihV9qHlhoGG"
               alt="The Silky Vase"
+              width={300}
+              height={300}
               className="product-image"
             />
             <h3>The Silky Vase</h3>
             <p>£125</p>
           </div>
           <div className="product">
-            <img
+            <Image
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4CAhCo10pw_vXqyJvVyfuzsUH0a0J6kn0nFJOHDyMRUuRWdWA"
               alt="The Lucy Lamp"
+              width={300}
+              height={300}
               className="product-image"
             />
             <h3>The Lucy Lamp</h3>

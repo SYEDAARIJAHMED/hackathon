@@ -1,14 +1,19 @@
-// app/about/page.tsx
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <div className="about-page">
+      {/* Hero Section */}
       <section className="about-hero">
-        <img
-          src="https://urdzines.com/wp-content/uploads/2024/05/gj1dnc7yrg0.webp"
-          alt="About Us Hero"
-          className="about-hero-image"
-        />
+        <div className="about-hero-image-container">
+          <Image
+            src="https://urdzines.com/wp-content/uploads/2024/05/gj1dnc7yrg0.webp"
+            alt="About Us Hero"
+            layout="fill"
+            objectFit="cover"
+            className="about-hero-image"
+          />
+        </div>
         <div className="about-hero-text">
           <h1>About Us</h1>
           <p>
@@ -18,6 +23,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mission Section */}
       <section className="about-mission">
         <h2>Our Mission</h2>
         <p>
