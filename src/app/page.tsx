@@ -26,8 +26,12 @@ export default function HomePage() {
             />
           </div>
           <div className="hero-text-box">
-            <h1 className="hero-title">Luxury homeware for people who love timeless design quality</h1>
-            <p className="hero-description">Shop the new Spring 2022 collection today</p>
+            <h1 className="hero-title">
+              Luxury homeware for people who love timeless design quality
+            </h1>
+            <p className="hero-description">
+              Shop the new Spring 2022 collection today
+            </p>
             <Link href="/product-listing">
               <button className="button">View collection</button>
             </Link>
@@ -78,7 +82,7 @@ export default function HomePage() {
           <div className="diff-item">
             <span>💸</span>
             <h3>Unbeatable prices</h3>
-            <p>For our materials and quality you won't find better prices anywhere</p>
+            <p>For our materials and quality you won&apos;t find better prices anywhere</p>
           </div>
           <div className="diff-item">
             <span>♻️</span>
